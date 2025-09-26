@@ -11,12 +11,14 @@
 </head>
 
 <body>
-    <form>
-        <div class="container my-2">
-            <div class="card">
-                <div class="card-header">
-                    <h2>Payment form example</h2>
-                </div>
+
+    <div class="container my-2">
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Payment form example</h2>
+            </div>
+            <form>
                 <div>
                     <p class="card-text alert alert-danger m-3">Some fields are missing</p>
                     <!----PRIMERA LINEA---->
@@ -27,13 +29,13 @@
                                     placeholder="XXXXXXXXXXXXXXXX" required>
                             </div>
                         </div>
-                        <div class="col-md">
+                        <div class="col-md-3">
                             <div> <label class="form-label">CVC #</label>
                                 <input id="cvc" name="cvc" type="number" class="form-control" placeholder="0000"
                                     required>
                             </div>
                         </div>
-                        <div class="col-md">
+                        <div class="col-md-4">
                             <div> <label for="amount" class="form-label">Amount</label>
                                 <div class="d-flex">
                                     <label><i class="fa-solid fa-dollar-sign"></i></label>
@@ -82,7 +84,7 @@
                         <div class="col-md-6">
                             <p>We accept:</p>
                             <div class="bg-secondary border rounded p-2 form-check-inline ">
-                                <input required type="radio" name="payment" id="mastercard">
+                                <input class="ms-2" type="radio" name="payment" id="mastercard">
                                 <label class="me-3" for="mastercad">
                                     <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i>
                                 </label>
@@ -113,9 +115,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-    </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
